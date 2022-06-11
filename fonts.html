@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="theme-color" content="#222">
+ <meta charset="UTF-8">  
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <meta name="author" content="fazle-rabbi">
+ <!-- FONTAWESOME KIT -->
+ <script src="https://kit.fontawesome.com/2982aea746.js" crossorigin="anonymous"></script>
+ <title>Demo Template</title>
+ <link rel="stylesheet" href="css/main.css" title="" type="" />
+ <link rel="stylesheet" href="css/utilities.css" title="" type="" />
+ <link rel="stylesheet" href="css/mobile.css" title="" type="" />
+ <link rel="stylesheet" href="css/desktop.css" title="" type="" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Kalam:wght@300&family=Mali&family=Pangolin&family=Patrick+Hand&family=Source+Sans+Pro&family=Ubuntu&display=swap" rel="stylesheet">
+ <style type="text/css" media="all">
+   body{
+     background: #f3f3f3;
+   }
+   .content{
+     /* border: 2px solid red; */
+   }
+   .title{
+     border-bottom: 0.5px solid gray;
+     padding-bottom: 8px;
+   }
+   .text{
+     background: #854c62;
+     color: white;
+     padding: 10px;
+     border-radius: 7px;
+     border: 2px solid #424242;
+   }
+ </style>
+</head>
+<body>
+ 
+
+<!--  <div class="content">
+  <h2 class="title">Title</h2>
+  <p class="text">test</p>
+</div> -->
+ 
+ <script type="text/javascript" charset="utf-8">
+   let fonts = [
+     "'Baloo 2', cursive",
+     "'Kalam', cursive",
+     "'Mali', cursive",
+     "'Pangolin', cursive",
+     "'Patrick Hand', cursive",
+     "'Source Sans Pro', sans-serif",
+     "'Ubuntu', sans-serif"
+     ];
+     // console.log(fonts[1])
+   let title = ['Baloo','Kalam','Mali','Pangolin','Patrick Hand','Source Sans Pro','Ubuntu'];
+   let paragraph = [
+     'Ut aut omnis a illo nesciunt est ut. Totam sed qui aut fugiat perferendis et id dolorem. Vel eligendi quia et. Soluta rerum sed eligendi unde iste tenetur magnam.',
+     'Quo aut impedit voluptatem et error enim. Illum et et praesentium et voluptate. Iste repellendus et iure qui praesentium saepe dolores.',
+     'Aut in enim rerum tempore. Porro officiis molestias dolor. Ea eligendi voluptas laborum error laboriosam sequi enim aut. Sit veritatis illum quae enim unde.',
+     'Officia sint non magni qui dolorum nisi tenetur. In non pariatur animi voluptates. Est distinctio soluta consequatur consequatur sequi dolores. Eveniet magni et voluptatem similique voluptatem. Cumque et ratione culpa consequatur commodi quidem consequatur.',
+     'Qui soluta cupiditate voluptatem voluptatem. Ullam ipsa ab rerum voluptas est consequatur tempore. Neque et ea ipsa laboriosam distinctio qui nesciunt.',
+     'Sunt labore quasi esse quia iusto. Id laudantium saepe magnam in quia. Et dolorum distinctio incidunt ut. Enim vitae explicabo illo exercitationem. Qui est cum et et animi dolor.',
+     'Sed perspiciatis numquam et voluptas qui veritatis. Maiores qui occaecati consequatur sed eum porro. Voluptatum quasi accusantium incidunt quod atque.'
+     ];
+     
+     for(index in paragraph){
+       let div = document.createElement('div');
+       div.innerHTML = `
+        <div class="content">
+         <h2 class="title">${fonts[index]}:</h2>
+         <p style="font-family:${fonts[index]};" class="text">${paragraph[index]}</p>
+        </div>
+       `;
+       document.body.appendChild(div);
+     }
+ </script>
+ 
+<!-- Js Link -->
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>  
+</body>
+</html>
